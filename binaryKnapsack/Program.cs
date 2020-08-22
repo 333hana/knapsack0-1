@@ -23,8 +23,13 @@ namespace binaryKnapsack
             GeneticKnapsack genetic = new GeneticKnapsack(wt, val, W, wt.Length, 13, 100);
             genetic.solveGenetic();
             Console.WriteLine("----------------------------------------------------------");
+<<<<<<< HEAD
             KnapsackDP DP = new KnapsackDP(wt, val, W);
             DP.solveDP();
+=======
+            KnapsackGreedy greedy = new KnapsackGreedy(wt, val, W);
+            greedy.solveGreedy();
+>>>>>>> e8a85ca080f94061ed2a9b73bd0cff74a2afccfe
             Console.WriteLine("----------------------------------------------------------");
         }
     }
